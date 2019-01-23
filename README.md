@@ -1,21 +1,30 @@
-##天气查询自用接口，使用短信通知
-        查询天气接口：http://www.sojson.com/open/api/weather/json.shtml?city={}
-        短信接口：网易短信
+
 
 ##python版本2.7
 
-##依赖库 requsts
+###  启动
+```bash
+python main.py
+```
 
-##输出格式
-        新的一天又来啦，给小主念早安早安早安，重要的事情说三遍，今天是11日星期天
-        长沙最高温度 27℃，最低温度 22℃
-        天气是:小雨，把伞伞伞带好，重要的事情说三遍，下班自当来接小主回家哦！
-##6-19 update
-        实现发送短信功能
 
-##6-19 update
-        实现发送短信功能
-        增加雨天判断，增加多个手机号和城市，为一对一关系
+## 安装依赖
+```bash
+pip install -r ./requirements.txt
+```
+Linux:
+# env中linux和windows一样
+pip install pyyaml 或者 pip3 install pyyaml
+
+# 其他情况可尝试
+sudo apt-get install python-yaml
+sudo yum install python-yaml
+
+
+
+## LICENSE
+
+MIT
 
 
 
