@@ -1,0 +1,19 @@
+---
+# 配置文件请严格遵循yaml语法格式，yaml学习地址 https://ansible-tran.readthedocs.io/en/latest/docs/YAMLSyntax.html
+
+Weather:  
+  #city_name: ["上海","北京"]
+  city_name:
+   - "北京"
+   - "上海"
+
+sms:
+  phone: ["15630202667","18233215913"]
+  #name: 15630202667
+  name: 15618715583
+  pwd: D7F1B1A883DE9DBF8B198372D8DC
+  sign: lidw
+
+
+
+

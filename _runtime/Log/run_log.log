@@ -1,0 +1,111 @@
+2019-01-23 14:07:45,490 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:07:45,494 - daily - INFO - 程序停止运行!
+2019-01-23 14:09:10,911 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:09:10,911 - daily - INFO - 程序停止运行!
+2019-01-23 14:09:57,013 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:09:57,013 - daily - INFO - 程序停止运行!
+2019-01-23 14:12:16,131 - daily - INFO - main程序开始运行!
+2019-01-23 14:12:16,134 - daily - INFO - 正在获取[u'\u4e0a\u6d77']天气信息
+
+2019-01-23 14:12:16,558 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:12:16,558 - daily - INFO - 程序停止运行!
+2019-01-23 14:13:44,701 - daily - INFO - main程序开始运行!
+2019-01-23 14:13:44,704 - daily - INFO - 正在获取[u'\u4e0a\u6d77']天气信息
+
+2019-01-23 14:13:45,127 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:13:45,127 - daily - INFO - 程序停止运行!
+2019-01-23 14:15:49,394 - daily - INFO - main程序开始运行!
+2019-01-23 14:15:49,398 - daily - INFO - 程序运行出错!
+2019-01-23 14:15:49,398 - daily - ERROR - list indices must be integers, not str
+2019-01-23 14:15:49,398 - daily - INFO - 程序停止运行!
+2019-01-23 14:16:39,918 - daily - INFO - main程序开始运行!
+2019-01-23 14:16:39,921 - daily - INFO - 程序运行出错!
+2019-01-23 14:16:39,921 - daily - ERROR - list indices must be integers, not str
+2019-01-23 14:16:39,921 - daily - INFO - 程序停止运行!
+2019-01-23 14:21:59,003 - daily - INFO - main程序开始运行!
+2019-01-23 14:21:59,006 - daily - INFO - 正在获取-"上海"天气信息
+
+2019-01-23 14:21:59,421 - daily - ERROR - 'daily_forecast'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 57, in get_heweatherInfo
+    weather_forecast = r['HeWeather6'][0]['daily_forecast']
+KeyError: 'daily_forecast'
+2019-01-23 14:21:59,464 - daily - ERROR - 'lifestyle'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 101, in get_heweatherLifeStyleInfo
+    lifestyle = r['HeWeather6'][0]['lifestyle']
+KeyError: 'lifestyle'
+2019-01-23 14:21:59,464 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:21:59,464 - daily - INFO - 程序运行出错!
+2019-01-23 14:21:59,464 - daily - ERROR - 'weather'
+2019-01-23 14:21:59,464 - daily - INFO - 程序停止运行!
+2019-01-23 14:22:13,770 - daily - INFO - main程序开始运行!
+2019-01-23 14:22:13,773 - daily - INFO - 正在获取[u'\u4e0a\u6d77']天气信息
+
+2019-01-23 14:22:14,184 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:22:14,186 - daily - INFO - 程序停止运行!
+2019-01-23 14:22:38,095 - daily - INFO - main程序开始运行!
+2019-01-23 14:22:38,098 - daily - INFO - 正在获取上海天气信息
+
+2019-01-23 14:22:38,552 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:22:38,552 - daily - INFO - 程序停止运行!
+2019-01-23 14:26:07,407 - daily - INFO - main程序开始运行!
+2019-01-23 14:26:07,407 - daily - INFO - 程序运行出错!
+2019-01-23 14:26:07,407 - daily - ERROR - while parsing a block mapping
+  in "D:\py\sendSms\Config/conf.yaml", line 6, column 3
+expected <block end>, but found '<scalar>'
+  in "D:\py\sendSms\Config/conf.yaml", line 8, column 5
+2019-01-23 14:26:07,407 - daily - INFO - 程序停止运行!
+2019-01-23 14:26:36,273 - daily - INFO - main程序开始运行!
+2019-01-23 14:26:36,276 - daily - INFO - 正在获取[u'\u5317\u4eac', u'\u4e0a\u6d77']天气信息
+
+2019-01-23 14:26:36,654 - daily - ERROR - 'daily_forecast'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 57, in get_heweatherInfo
+    weather_forecast = r['HeWeather6'][0]['daily_forecast']
+KeyError: 'daily_forecast'
+2019-01-23 14:26:36,706 - daily - ERROR - 'lifestyle'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 101, in get_heweatherLifeStyleInfo
+    lifestyle = r['HeWeather6'][0]['lifestyle']
+KeyError: 'lifestyle'
+2019-01-23 14:26:36,707 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:26:36,707 - daily - INFO - 程序运行出错!
+2019-01-23 14:26:36,707 - daily - ERROR - 'weather'
+2019-01-23 14:26:36,707 - daily - INFO - 程序停止运行!
+2019-01-23 14:29:42,644 - daily - INFO - main程序开始运行!
+2019-01-23 14:29:42,647 - daily - INFO - 正在获取[u'\u5317\u4eac', u'\u4e0a\u6d77']天气信息
+
+2019-01-23 14:29:43,072 - daily - ERROR - 'daily_forecast'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 57, in get_heweatherInfo
+    weather_forecast = r['HeWeather6'][0]['daily_forecast']
+KeyError: 'daily_forecast'
+2019-01-23 14:29:43,121 - daily - ERROR - 'lifestyle'
+Traceback (most recent call last):
+  File "D:\py\sendSms\getWeather.py", line 101, in get_heweatherLifeStyleInfo
+    lifestyle = r['HeWeather6'][0]['lifestyle']
+KeyError: 'lifestyle'
+2019-01-23 14:29:43,121 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:29:43,121 - daily - INFO - 程序运行出错!
+2019-01-23 14:29:43,121 - daily - ERROR - 'weather'
+2019-01-23 14:29:43,121 - daily - INFO - 程序停止运行!
+2019-01-23 14:30:59,013 - daily - INFO - main程序开始运行!
+2019-01-23 14:30:59,016 - daily - INFO - 正在获取上海天气信息
+
+2019-01-23 14:30:59,420 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:30:59,420 - daily - INFO - 程序停止运行!
+2019-01-23 14:31:27,733 - daily - INFO - main程序开始运行!
+2019-01-23 14:31:27,736 - daily - INFO - 正在获取北京天气信息
+
+2019-01-23 14:31:28,145 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:31:28,147 - daily - INFO - 正在获取上海天气信息
+
+2019-01-23 14:31:28,266 - daily - INFO - 获取天气信息成功!
+2019-01-23 14:31:28,266 - daily - INFO - 程序停止运行!
+2019-01-23 14:31:43,615 - daily - INFO - main程序开始运行!
+2019-01-23 14:31:43,618 - daily - INFO - 正在获取北京天气信息
+
+2019-01-23 14:31:44,030 - daily - INFO - 正在获取上海天气信息
+
+2019-01-23 14:31:44,134 - daily - INFO - 程序停止运行!

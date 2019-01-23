@@ -1,0 +1,39 @@
+2019-01-21 21:39:30,473 - daily - INFO - main程序开始运行!
+2019-01-21 21:39:30,476 - daily - INFO - 初始化天气设置信息成功
+2019-01-21 21:39:30,476 - daily - INFO - 程序停止运行!
+2019-01-21 21:40:42,575 - daily - INFO - main程序开始运行!
+2019-01-21 21:40:42,578 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:40:42,578 - daily - INFO - 程序停止运行!
+2019-01-21 21:43:34,256 - daily - INFO - main程序开始运行!
+2019-01-21 21:43:34,260 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:43:34,260 - daily - INFO - 程序运行出错!
+2019-01-21 21:43:34,260 - daily - ERROR - 'Weather' object has no attribute '__getitem__'
+2019-01-21 21:43:34,260 - daily - INFO - 程序停止运行!
+2019-01-21 21:43:59,420 - daily - INFO - main程序开始运行!
+2019-01-21 21:43:59,423 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:43:59,424 - daily - INFO - 程序运行出错!
+2019-01-21 21:43:59,424 - daily - ERROR - 'Weather' object has no attribute '__getitem__'
+2019-01-21 21:43:59,424 - daily - INFO - 程序停止运行!
+2019-01-21 21:44:30,483 - daily - INFO - main程序开始运行!
+2019-01-21 21:44:30,486 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:44:30,911 - daily - INFO - 程序运行出错!
+2019-01-21 21:44:30,911 - daily - ERROR - 'Weather' object has no attribute 'weather_data'
+2019-01-21 21:44:30,911 - daily - INFO - 程序停止运行!
+2019-01-21 21:45:07,677 - daily - INFO - main程序开始运行!
+2019-01-21 21:45:07,680 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:45:08,105 - daily - INFO - 程序运行出错!2424
+2019-01-21 21:45:08,105 - daily - ERROR - 'Weather' object has no attribute 'weather_data'
+2019-01-21 21:45:08,105 - daily - INFO - 程序停止运行!
+2019-01-21 21:45:20,888 - daily - INFO - main程序开始运行!
+2019-01-21 21:45:20,892 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:45:21,319 - daily - INFO - 程序运行出错!
+2019-01-21 21:45:21,319 - daily - ERROR - 'Weather' object has no attribute 'weather_data'
+2019-01-21 21:45:21,319 - daily - INFO - 程序停止运行!
+2019-01-21 21:45:38,523 - daily - INFO - main程序开始运行!
+2019-01-21 21:45:38,526 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:45:38,951 - daily - INFO - 程序运行出错!
+2019-01-21 21:45:38,951 - daily - ERROR - 'Weather' object has no attribute 'weather_data'
+2019-01-21 21:45:38,951 - daily - INFO - 程序停止运行!
+2019-01-21 21:46:46,453 - daily - INFO - main程序开始运行!
+2019-01-21 21:46:46,457 - daily - INFO - 初始化天气设置信息成功，开始获取北京的天气
+2019-01-21 21:46:46,861 - daily - INFO - 程序停止运行!
