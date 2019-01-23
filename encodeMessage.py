@@ -13,6 +13,8 @@ class Message(object):
     def __init__(self, weatherInfo):
         self.weatherInfo = weatherInfo
         self.message = []
+        # 每日一句URL 金山词霸开放平台-api   获取地址：http://open.iciba.com/?c=api
+        self.iciba_ds_url = 'http://open.iciba.com/dsapi/'
 
     def __str__(self):
         return " ".join(self.message)
@@ -55,33 +57,27 @@ class Message(object):
                                                            self.weatherInfo['weather'][2]['tmp_max']))
         self.message.append("穿衣建议: {}\n".format(self.weatherInfo['lifestyle'][1]['txt']))
 
-    def sendMessageByType(self):
-        if self.weatherInfo["type"] == "晴" or self.weatherInfo["type"] == "晴转多云" or self.weatherInfo["type"] == "多云":
-            self.message.append("天气是:{}，天气真好，就好我对小主一样！记得带伞，别晒黑了哦".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "阴":
-            self.message.append("天气是:{}，天气一般，小主呆在家里好好追剧最好".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "雾":
-            self.message.append("天气是:{}，出门眼睛要擦亮哦，提醒小主要看好老公！".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "雨夹雪":
-            self.message.append("天气是:{}，把伞带好，小主还是别出门啦，如果硬要出，把家里的皮大衣拿来".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "暴雨":
-            self.message.append("天气是:{}，今天不要出去了，太可怕了！".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"].find("雨") != -1:
-            self.message.append("天气是:{}，把伞伞伞带好，重要的事情说三遍，雨天路滑，回家当心，路上别看手机".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "大雪" or self.weatherInfo["type"] == "小雪" or self.weatherInfo["type"] == "中雪":
-            self.message.append("天气是:{}，呆在家里多暖和，起什么床呀！来呀，快活啊，反正有大把时光！".format(self.weatherInfo["type"]))
-        elif self.weatherInfo["type"] == "冰雹":
-            self.message.append("天气是:{}，安全第一，在家好好呆着，文大帅冒死也会给小主弄吃的".format(self.weatherInfo["type"]))
-        else:
-            print(self.weatherInfo["type"])
+
 
     def sendMessageByWantTosay(self):
         pass
 
-    def main(self):
+    def get_dsInfo(self):
+        try:
+            response = requests.get(self.iciba_ds_url)
+            # r = json.loads(json.dumps(response.text, ensure_ascii=False, indent=1))
+            r = json.loads(response.text)
+            content = r['content']
+            print(content)
+            note = r['note']
+            print(note)
 
+        except Exception as e:
+            _logger.exception(e)
+
+    def main(self):
         self.sendMessageByTemperature()
-        #self.sendMessageByType()
+        self.get_dsInfo()
         self.sendTemplate()
         return "".join(self.message)
 
