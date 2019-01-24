@@ -45,10 +45,12 @@ def loop():
 def run():
     i = 1
     Code()
-    _logger.info("run程序开始运行!")
+    exe_hours = _get_yaml()["set"]["exe_hours"]
+    # print(exe_hours)
+    _logger.info(u"run程序开始运行!")
     while True:
         now = datetime.datetime.now()
-        if now.hour == 7 and now.minute == 0:
+        if now.hour in exe_hours and now.minute == 0:
             loop()
             i += 1
             _logger.info(u"时间到{}，开始loop".format(now))

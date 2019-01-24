@@ -21,4 +21,14 @@ pushbear_conf:
   send_key: "9931-b41ae51498cdf07a051825dd072f4e74"
 
 
+set:
+# 整点执行时间(list)，格式ex：
+  # - 07
+  # - 12
+  ##目前设定整点为7点
+  exe_hours:
+    - 07
+    - 17
+
+
 
