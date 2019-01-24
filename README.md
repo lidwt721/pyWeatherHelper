@@ -21,7 +21,15 @@ pip install -r ./requirements.txt
     sudo yum install python-yaml
 
 
+#### 采用pushbear发送微信消息
 
+     http://pushbear.ftqq.com/admin/#/
+
+
+#### 订阅公众号以接收消息
+
+
+ <img src="imgs/screen-shot.png" width="70%">
 
 ### 心灵鸡汤
 每日一句: http://open.iciba.com/dsapi/  金山词霸开放接口
