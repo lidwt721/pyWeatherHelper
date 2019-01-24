@@ -50,7 +50,7 @@ def run():
     _logger.info(u"run程序开始运行!")
     while True:
         now = datetime.datetime.now()
-        if now.hour in exe_hours and now.minute == 0:
+        if now.hour in exe_hours and now.minute == 0 and now.second ==0:
             loop()
             i += 1
             _logger.info(u"时间到{}，开始loop".format(now))
