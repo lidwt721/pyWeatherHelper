@@ -14,12 +14,12 @@ from Config.conf import _get_yaml
 
 __author__ = 'lidwt'
 
-def main_program():
+def reset():
     logging.config.dictConfig(conf.log_setting)
     log = logging.getLogger("daily")
-    log.info(u"main程序开始运行!")
+    log.info(u"reset程序开始运行!")
     try:
-        pyWeatherHelper.run()
+        pyWeatherHelper.loop()
     except Exception,e:
         log.info(u"程序运行出错!")
         log.error(e)
@@ -27,4 +27,4 @@ def main_program():
         log.info(u"程序停止运行!")
 
 if __name__ == '__main__':
-    main_program()
+    reset()
