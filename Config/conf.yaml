@@ -5,7 +5,7 @@ Weather:
   #city_name: ["上海","北京"]
   city_name:
    - "北京"
-   - "上海"
+  #  - "上海"
 
 sms:
   phone: ["15630202667","18233215913"]
@@ -14,6 +14,11 @@ sms:
   pwd: D7F1B1A883DE9DBF8B198372D8DC
   sign: lidw
 
+
+# 是否开启 pushbear 微信提醒， 使用前需要前往 http://pushbear.ftqq.com 扫码绑定获取 send_key 并关注获得DW天气信息通知的公众号
+pushbear_conf:
+  is_pushbear : True #False
+  send_key: "9931-b41ae51498cdf07a051825dd072f4e74"
 
 
 

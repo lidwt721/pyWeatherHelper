@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 import urllib2
 from time import sleep
-import myUrllib
+from myUrllib import HttpClient
 from getWeather import Weather
 from sendSms.Config.conf import _get_yaml
 
@@ -21,7 +21,7 @@ class sendMessage(object):
         :return:1 代表 余额不足  0 代表余额充足
         """
         sendUrl = "http://web.cr6868.com/asmx/smsservice.aspx?name={}&pwd={}&type=balance".format(self.name, self.pwd)
-        resultB = myUrllib.get(sendUrl)
+        resultB = HttpClient.get(sendUrl)
         if resultB is not None:
             try:
                 spResultB = resultB.split(",")
@@ -53,7 +53,7 @@ class sendMessage(object):
         #     "mobile": self.phone,
         #     "sign": self.sign,
         # }
-        infoResult = myUrllib.get(sendUrl)
+        infoResult = HttpClient.get(sendUrl)
         if infoResult is not None:
             code = infoResult.split(",")[0]
             if int(code) == 0:

@@ -1,14 +1,10 @@
 # -*- coding: utf8 -*-
 import json
-import random
 import requests
 from time import sleep
-import logging
-import logging.config
 import logging.handlers
-import myUrllib
-import  Config.conf
-from Config.conf import _get_yaml
+from myUrllib import HttpClient
+
 weather_data = {}
 _logger = logging.getLogger("daily")
 
@@ -16,7 +12,7 @@ class Weather(object):
     def __init__(self, city_name):
         self.city_name = city_name
         weather_data['city_name'] = city_name
-        _logger.info("正在获取{}天气信息\n".format(city_name))
+        _logger.info(u"正在获取{}天气信息\n".format(city_name))
         # 天气预报URL
         self.forecast_url ='https://free-api.heweather.com/s6/weather/forecast?parameters'
         # 生活指数
@@ -40,7 +36,7 @@ class Weather(object):
     def getWeatherInfo(self):
         for i in range(1):
             self.weatherUrl = "http://www.sojson.com/open/api/weather/json.shtml?city={}".format(self.city_name)
-            result = json.loads(myUrllib.get(self.weatherUrl))
+            result = json.loads(HttpClient.get(self.weatherUrl))
             if "status" in result and result["status"] is 200 and result["data"]:
                 self.weatherInfo = result["data"]["forecast"][0]   # 获取今日天气预报
                 break
@@ -112,9 +108,9 @@ class Weather(object):
         return weather_data
 
 if __name__ == '__main__':
-    _logger.info("正在请求%s的天气" % str("北京"))
+    _logger.info(u"正在请求%s的天气" % str("北京"))
     w = Weather("北京")
     print (w.main())
-    _logger.debug("已经成功请求%s的天气"%str("北京") )
+    _logger.debug(u"已经成功请求%s的天气"%str("北京") )
 
 

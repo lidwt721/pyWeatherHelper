@@ -2,10 +2,6 @@
 import json
 import random
 import requests
-from time import sleep
-import myUrllib
-import logging
-import logging.config
 import logging.handlers
 _logger = logging.getLogger("daily")
 
@@ -41,9 +37,12 @@ class Message(object):
             "good   morning。。。。。\n",
             "晚安，哦，说错了，是早安，小主，\n"
         ]
+        self.message.append("\n")
         self.message.append(template[random.randint(0, len(template))])
 
     def sendMessageByTemperature(self):
+        self.message.append("白天天气:{0} {1} \n".format(self.weatherInfo['weather'][0]['cond_txt_d'],
+                                                     self.weatherInfo['weather'][0]['wind_dir']))
         self.message.append("当前时间:{}\n".format(self.weatherInfo['weather'][0]['date']))
         self.message.append("城市:{}\n".format(self.weatherInfo['city_name']))
         self.message.append("白天天气:{0} {1} \n".format(self.weatherInfo['weather'][0]['cond_txt_d'],self.weatherInfo['weather'][0]['wind_dir']))
@@ -68,14 +67,15 @@ class Message(object):
             # r = json.loads(json.dumps(response.text, ensure_ascii=False, indent=1))
             r = json.loads(response.text)
             content = r['content']
-            print(content)
+            self.message.append(content)
             note = r['note']
-            print(note)
+            self.message.append(note)
 
         except Exception as e:
             _logger.exception(e)
 
     def main(self):
+        _logger.info(u"正在组织微信信息\n")
         self.sendMessageByTemperature()
         self.get_dsInfo()
         self.sendTemplate()
