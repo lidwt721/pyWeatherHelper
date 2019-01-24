@@ -50,11 +50,14 @@ def run():
     _logger.info(u"run程序开始运行!")
     while True:
         now = datetime.datetime.now()
-        if now.hour in exe_hours and now.minute == 0 and now.second ==0:
+        if now.hour in exe_hours and now.minute == 0 :
+            _logger.info(u"时间到{}，开始loop".format(now))
             loop()
             i += 1
-            _logger.info(u"时间到{}，开始loop".format(now))
+            _logger.info(u"程序休眠中...")
+            time.sleep(60)#确保一分钟内值执行一次
         _logger.info(u"时间未到{}".format(now))
+        # 不到时间就等3秒之后再次检测
         time.sleep(3)
 
 if __name__ == '__main__':
