@@ -1,11 +1,16 @@
 
 
-##python版本2.7
+## python版本2.7
 
 ###  启动
 ```bash
 python main.py
 ```
+#### win平台也可通过以下方式启动
+    双击 `wallpaper.bat` 即可
+    若要实现自动更换，可将 `start—_up.vbs` 添加快捷方式到启动项即可
+
+    > 使用vbs主要是为了隐藏启动时的小黑窗...
 
 
 #### 安装依赖
